@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0:
+}
+root{
+    --c1: #F1EEE9;
+    --c2: #EC994B;
+    --c3: #73777B;
+    --c4: #947EC3;
+    --c5: #6A67CE;
+    --c6: #15133C;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    /*height: 100vh;*/
+}
+
+#body{
+    background:
+            radial-gradient(var(--c1),var(--c2),var(--c3)),
+            radial-gradient(var(--c4),var(--c5),var(--c6));
+            background-size: 400% 400%;
+            -webkit-animation: 20s else-in-out infinite;
+}
+#body {
+    background: radial-gradient(var(--c1), var(--c2), var(--c3), transparent),
+    radial-gradient(var(--c4), var(--c5), var(--c6), transparent);
+    background-size: 400% 400%;
+    -webkit-animation: liquidBG 20s ease-in-out infinite;
+}
+
+@-webkit-keyframes liquidBG {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 150%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.myBtn{
+    box-shadow: 0 5px 100px black;
+    transform: scale(1, 1);
+    transition: transform 2s;
+}
+.myBtn:hover{
+    transform: scale(1.1, 1.1);
+    transition: transform 1s;
+}
